@@ -15,9 +15,18 @@ composer require jobinja/blade-macro
 Just use the following service provider in your `app.php`:
 
 ```php
-App\ServiceProvider::class
+[
+    App\ServiceProvider::class,
+    //...
+]
 ```
 Then you can simply replace your needed old `@include` directives with the new `@macro` one.
+
+By default the package re-compiles blade views on each request in **development** environment, if you want to disable this feature run:
+```bash
+php artisan vendor:publish --provider=JobinjaTeam\BladeMacro\JobinjaBladeMacroServiceProvider
+```
+and config the package based on your needs.
 
 ### Problem
 Consider the following loop:
