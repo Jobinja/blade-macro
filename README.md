@@ -90,4 +90,4 @@ composer test
 ```
 
 ### License
-Usage under MIT, part of the effort for making [Jobinja.ir](https://jobinja.ir) better.
+Licensed under MIT, part of the effort for making [Jobinja.ir](https://jobinja.ir) better.
