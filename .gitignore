@@ -3,4 +3,5 @@
 phpunit.xml
 /build/
 /build/*
+/composer.lock
 composer.lock
