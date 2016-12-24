@@ -6,7 +6,7 @@ Just like what `@include` does but with zero runtime I/O.
 But sometimes `@include` is used when we want to just **Don't repeat ourselves**
 But this abstraction should not cause any performance bottleneck.
 
-### Installation
+### Installation (Laravel 5.1 and 5.3)
 ```bash
 composer require jobinja/blade-macro
 ```
