@@ -40,7 +40,7 @@ The above code will be replaced by something like the following:
 <?php } ?>
 ```
 
-The above code **includes** the generated file for 5,000,000 times, which causes heavy I/O calls, but the only
+The above code **includes** the **iteration.blade.php** file for 5,000,000 times, which causes heavy I/O calls, but the only
 reason we have used the `iteration` partial is to create more abstraction and don't repeat our selves.
 
 ### Solution
