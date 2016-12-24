@@ -82,5 +82,10 @@ The above `@macro` directive will be translated to the following:
 <?php } ?>
 ```
 
+### Running tests
+```bash
+composer test
+```
+
 ### License
 Licensed by MIT, part of the effort for making https://jobinja.ir better.
