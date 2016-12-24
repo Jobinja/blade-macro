@@ -3,6 +3,7 @@
 namespace JobinjaTeam\BladeMacro;
 
 use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
 
@@ -16,11 +17,11 @@ class JobinjaBladeMacroServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.DIRECTORY_SEPARATOR.'fixtures'.DIRECTORY_SEPARATOR.'blade_macro.php' => $this->app->make('path.config').DIRECTORY_SEPARATOR.'blade_macro.php',
+            __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'fixtures'.DIRECTORY_SEPARATOR.'blade_macro.php' => $this->app->make('path.config').DIRECTORY_SEPARATOR.'blade_macro.php',
         ]);
 
         if ($this->clearsViews()) {
-            $this->app->call('view:clear');
+            Artisan::call('view:clear');
         }
 
         /** @var BladeCompiler $compilerInstance */
