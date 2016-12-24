@@ -15,13 +15,17 @@ class JobinjaBladeMacroServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.DIRECTORY_SEPARATOR.'fixtures'.DIRECTORY_SEPARATOR.'blade_macro.php' => $this->app->make('path.config').DIRECTORY_SEPARATOR.'blade_macro.php',
+        ]);
+
         if ($this->clearsViews()) {
             $this->app->call('view:clear');
         }
 
         /** @var BladeCompiler $compilerInstance */
         $compilerInstance = $this->app['blade.compiler'];
-        
+
         $compilerInstance->extend(function ($value) {
 
             /** @var BladeExtensionBuilder $instance */
@@ -50,6 +54,12 @@ class JobinjaBladeMacroServiceProvider extends ServiceProvider
      */
     private function clearsViews()
     {
-        return false;
+        $config = $this->app['config'];
+
+        if (!$config['app.debug']) {
+            return false;
+        }
+
+        return $this->app['config']->get('blade_macro.clear_views_on_development', true);
     }
 }
