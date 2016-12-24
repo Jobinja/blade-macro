@@ -38,6 +38,8 @@ php artisan vendor:publish --provider=JobinjaTeam\BladeMacro\JobinjaBladeMacroSe
 and config the package based on your needs.
 
 ### Problem
+Please see https://github.com/laravel/framework/pull/16583 or simply read the following:
+
 Consider the following loop:
 
 ```php
