@@ -1,0 +1,15 @@
+{
+    "name": "jobinja/blade-macro",
+    "description": "Reusable scope-protected blade blocks, with empty I/O on runtime (replacement for @include which uses native I/O based PHP includes).",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reza Shadman",
+            "email": "pcfeeler@gmail.com"
+        }
+    ],
+    "require": {
+
+    }
+}
