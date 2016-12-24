@@ -16,7 +16,7 @@ Just use the following service provider in your `app.php`:
 
 ```php
 [
-    App\ServiceProvider::class,
+    \JobinjaTeam\BladeMacro\JobinjaBladeMacroServiceProvider::class,
     //...
 ]
 ```
