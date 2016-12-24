@@ -20,7 +20,16 @@ Just use the following service provider in your `app.php`:
     //...
 ]
 ```
-Then you can simply replace your needed old `@include` directives with the new `@macro` one.
+Then you can simply replace your needed old `@include` directives with the new `@macro` one:
+
+```php
+@include('some_partial', ['some_var' => 'some_value')
+
+// Should be replaced with:
+@macro('some_partial', ['some_var' => 'some_value'])
+```
+
+### Configuration
 
 By default the package re-compiles blade views on each request in **development** environment, if you want to disable this feature run:
 ```bash
