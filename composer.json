@@ -3,6 +3,13 @@
   "description": "Reusable scope-protected blade blocks, with empty I/O on runtime (replacement for @include which uses native I/O based PHP includes).",
   "type": "library",
   "license": "MIT",
+  "keywords": [
+    "blade",
+    "templating",
+    "performance",
+    "laravel",
+    "blade-optimize"
+  ],
   "authors": [
     {
       "name": "Reza Shadman",
@@ -31,4 +38,10 @@
       "JobinjaTeam\\BladeMacro\\Test\\": "tests/"
     }
   },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "scripts": {
+    "test" : "phpunit --colors=always",
+    "test:ci": "composer test -- --verbose --coverage-text --coverage-clover=coverage.xml"
+  }
 }
