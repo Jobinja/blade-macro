@@ -1,15 +1,34 @@
 {
-    "name": "jobinja/blade-macro",
-    "description": "Reusable scope-protected blade blocks, with empty I/O on runtime (replacement for @include which uses native I/O based PHP includes).",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Reza Shadman",
-            "email": "pcfeeler@gmail.com"
-        }
-    ],
-    "require": {
-
+  "name": "jobinja/blade-macro",
+  "description": "Reusable scope-protected blade blocks, with empty I/O on runtime (replacement for @include which uses native I/O based PHP includes).",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Reza Shadman",
+      "email": "pcfeeler@gmail.com"
     }
+  ],
+  "require": {
+    "php": "^5.5.9 || ^7.0",
+    "illuminate/view": "5.1.* || 5.2.* || 5.3.*",
+    "illuminate/contracts": "5.1.* || 5.2.* || 5.3.*",
+    "illuminate/support": "5.1.* || 5.2.* || 5.3.*"
+  },
+  "require-dev": {
+    "illuminate/console": "5.1.* || 5.2.* || 5.3.*",
+    "illuminate/view": "5.1.* || 5.2.* || 5.3.*",
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "^4.0 || ^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "JobinjaTeam\\BladeMacro\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JobinjaTeam\\BladeMacro\\Test\\": "tests/"
+    }
+  },
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="jwt-auth Test Suite" tests="3" assertions="3" failures="0" errors="0" time="0.010072">
+    <testsuite name="JobinjaTeam\BladeMacro\Test\BladeExtensionBuilderTest" file="/home/reshadman/projects/jobinja/blade-macro/tests/BladeExtensionBuilderTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.010072">
+      <testcase name="test_macros_are_compiled" class="JobinjaTeam\BladeMacro\Test\BladeExtensionBuilderTest" file="/home/reshadman/projects/jobinja/blade-macro/tests/BladeExtensionBuilderTest.php" line="27" assertions="1" time="0.009401"/>
+      <testcase name="test_macros_are_nestedly_compiled" class="JobinjaTeam\BladeMacro\Test\BladeExtensionBuilderTest" file="/home/reshadman/projects/jobinja/blade-macro/tests/BladeExtensionBuilderTest.php" line="47" assertions="1" time="0.000400"/>
+      <testcase name="test_exception_on_invalid_macro_name" class="JobinjaTeam\BladeMacro\Test\BladeExtensionBuilderTest" file="/home/reshadman/projects/jobinja/blade-macro/tests/BladeExtensionBuilderTest.php" line="87" assertions="1" time="0.000271"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

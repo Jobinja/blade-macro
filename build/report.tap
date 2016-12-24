@@ -1,0 +1,5 @@
+TAP version 13
+ok 1 - JobinjaTeam\BladeMacro\Test\BladeExtensionBuilderTest::test_macros_are_compiled
+ok 2 - JobinjaTeam\BladeMacro\Test\BladeExtensionBuilderTest::test_macros_are_nestedly_compiled
+ok 3 - JobinjaTeam\BladeMacro\Test\BladeExtensionBuilderTest::test_exception_on_invalid_macro_name
+1..3
