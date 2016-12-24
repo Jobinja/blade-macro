@@ -15,7 +15,7 @@
          stopOnFailure="false"
          verbose="true">
     <testsuites>
-        <testsuite name="jwt-auth Test Suite">
+        <testsuite name="blade-macro Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
