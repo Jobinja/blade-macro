@@ -35,13 +35,13 @@ The above code will be replaced by something like the following:
     <?php
         // Just for example in real world laravel wraps this
         // around a method to satisfy scope protected data.
-        include './blade_compiled_path/iteration.php';
+        include './blade_compiled_path/iteration_presenter.php';
     ?>
 <?php } ?>
 ```
 
-The above code **includes** the **iteration.blade.php** file for 5,000,000 times, which causes heavy I/O calls, but the only
-reason we have used the `iteration` partial is to create more abstraction and don't repeat our selves.
+The above code **includes** the **iteration_presenter.blade.php** file for 5,000,000 times, which causes heavy I/O calls, but the only
+reason we have used the `iteration_presenter` partial is to create more abstraction and don't repeat ourselves.
 
 ### Solution
 Instead of using native `include` directive we have created a new `@macro` directive which simply copy/pastes the
