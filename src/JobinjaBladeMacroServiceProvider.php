@@ -44,7 +44,7 @@ class JobinjaBladeMacroServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('blade_macro.builder', function (Application $app) {
-            return new BladeExtensionBuilder($app['view.finder'], $app['files']);
+            return new BladeExtensionBuilder($app['view']->getFinder(), $app['files']);
         });
     }
 
