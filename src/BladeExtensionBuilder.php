@@ -43,10 +43,6 @@ class BladeExtensionBuilder
             
             $expression = $this->stripParentheses($matches[3]);
 
-            if (Str::endsWith($expression, ')')) {
-                $expression = substr($expression, 0, -1);
-            }
-
             // We replace each occurrence of the @macro
             // with the contents of its file, and wrap the
             // imported content around a self-invokable function to satisfy the macro scope,
