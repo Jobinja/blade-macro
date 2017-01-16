@@ -62,7 +62,7 @@ class BladeExtensionBuilder
 
             $code = $codeStart.$viewContent."\n".$codeEnd;
 
-            $value = Str::replaceFirst($matches[0], $code, $value);
+            $value = self::replaceFirst($matches[0], $code, $value);
             
         }
 
@@ -151,5 +151,20 @@ HTML;
         }
 
         return $expression;
+    }
+
+    /**
+     * Replace first occurrence
+     *
+     * @param $from
+     * @param $to
+     * @param $subject
+     * @return string
+     */
+    private static function replaceFirst($from, $to, $subject)
+    {
+        $from = '/'.preg_quote($from, '/').'/';
+
+        return preg_replace($from, $to, $subject, 1);
     }
 }
