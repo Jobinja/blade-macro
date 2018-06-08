@@ -6,10 +6,19 @@ Just like what `@include` does but with zero runtime I/O.
 But sometimes `@include` is used when we want to just **Don't repeat ourselves**
 But this abstraction should not cause any performance bottleneck.
 
-### Installation (Laravel 5.1 and 5.3)
+### Installation
+
+For Laravel >= 5.5.0:
 ```bash
 composer require jobinja/blade-macro
 ```
+
+For Laravel <= 5.3.0:
+
+```bash
+composer require jobinja/blade-macro:1.0.*
+```
+
 ### Usage
 
 Just use the following service provider in your `app.php`:
